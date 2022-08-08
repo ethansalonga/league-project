@@ -336,27 +336,39 @@ a {
   text-align: center;
 }
 
-.landing__title--animation,
-.landing__sub-title--animation,
-.landing__input--animation {
-  animation-duration: 1500ms;
-  transition-duration: 1500ms;
+.landing__title--animation {
+  animation: fade-up 1500ms 300ms backwards;
   width: 100%;
 }
 
-.landing__title--animation {
-  animation-delay: 300ms;
-  transition-delay: 300ms;
-}
-
 .landing__sub-title--animation {
-  animation-delay: 600ms;
-  transition-delay: 600ms;
+  animation: fade-up 1500ms 600ms backwards;
+  width: 100%;
 }
 
 .landing__input--animation {
-  animation-delay: 1100ms;
-  transition-delay: 1100ms;
+  animation: fade-in 1500ms 1100ms backwards;
+  width: 100%;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .input-wrapper {
@@ -394,7 +406,6 @@ a {
 .not-loading {
   border: 1px solid #00adb5;
   background-color: #00adb5;
-  box-shadow: 7px 7px 14px rgb(0 173 181 / 30%);
   cursor: pointer;
 }
 
