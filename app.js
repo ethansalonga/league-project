@@ -17,3 +17,8 @@ const toggleModal = () => {
   document.querySelector(".close-btn").classList += " show"
   document.querySelector(".showMenu").classList += " active"
 }
+
+const toggleLoading = () => {
+  document.querySelector(".btn-search").classList.remove("not-loading")
+  document.querySelector(".btn-search").classList += " loading"
+}
