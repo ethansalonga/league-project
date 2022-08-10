@@ -29,7 +29,7 @@ const contactAlert = () => {
 
 const getChampions = async () => {
   const champions = await fetch(
-    "http://ddragon.leagueoflegends.com/cdn/12.15.1/data/en_US/champion.json"
+    "http://ddragon.leagueoflegends.com/cdn/12.15.1/data/en_US/champion/Caitlyn.json"
   )
 
   const championsData = await champions.json()
