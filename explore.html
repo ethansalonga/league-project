@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LeagueSearch | Explore League of Legends Champions</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js"></script>
   </head>
   <body>
     <div id="app">
       <div class="flex flex-col flex-1">
         <div class="explore__navbar flex flex-col">
-          <div
-            class="explore__content-wrapper justify-between items-center"
-          >
+          <div class="explore__content-wrapper justify-between items-center">
             <div class="logo">
               <img src="./assets/logo.png" alt="" class="logo" />
             </div>
@@ -23,6 +22,33 @@
               <a href="" class="btn-contact" onclick="contactAlert()"
                 >Contact</a
               >
+            </div>
+            <div id="mobile-nav" onclick="toggleModal()">
+              <div class="bento-menu">
+                <div class="explore__bento-dot"></div>
+                <div class="explore__bento-dot"></div>
+                <div class="explore__bento-dot"></div>
+                <div class="explore__bento-dot"></div>
+                <div class="explore__bento-dot"></div>
+                <div class="explore__bento-dot"></div>
+                <div class="explore__bento-dot"></div>
+                <div class="explore__bento-dot"></div>
+                <div class="explore__bento-dot"></div>
+              </div>
+              <div class="close-btn"></div>
+              <div class="showMenu">
+                <a
+                  href="/"
+                  class="link router-link-exact-active router-link-active"
+                  >Home</a
+                >
+                <a href="/explore-champions" class="link">Explore Champions</a>
+                <a
+                  href="/"
+                  class="link router-link-exact-active router-link-active"
+                  >Contact</a
+                >
+              </div>
             </div>
           </div>
         </div>

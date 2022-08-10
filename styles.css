@@ -544,3 +544,10 @@ NAVBAR
   width: 100%;
   left: 0;
 }
+
+.explore__bento-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+}

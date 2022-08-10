@@ -8,7 +8,7 @@ const toggleModal = () => {
       document.querySelector(".bento-menu").classList.remove("hide-anim-out")
       document.querySelector(".bento-menu").classList += " show-anim-in"
       document.querySelector(".showMenu").classList.remove("active")
-    }, [1000])
+    }, [800])
     return
   }
   isModalOpen = true
