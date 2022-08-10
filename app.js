@@ -22,3 +22,18 @@ const toggleLoading = () => {
   document.querySelector(".btn-search").classList.remove("not-loading")
   document.querySelector(".btn-search").classList += " loading"
 }
+
+const contactAlert = () => {
+  alert("This feature has not been implemented for this project.")
+}
+
+const getChampions = async () => {
+  const champions = await fetch(
+    "http://ddragon.leagueoflegends.com/cdn/12.15.1/data/en_US/champion.json"
+  )
+
+  const championsData = await champions.json()
+  console.log(championsData)
+}
+
+getChampions()
