@@ -471,30 +471,6 @@ NAVBAR
   }
 }
 
-@media (max-height: 1200px) {
-  #landing-page {
-    max-height: none;
-  }
-
-  .landing__title {
-    font-size: 50px;
-  }
-
-  .landing__sub-title {
-    margin-bottom: 40px;
-  }
-}
-
-@media (max-width: 750px) {
-  .navlinks {
-    display: none;
-  }
-
-  #mobile-nav {
-    display: block;
-  }
-}
-
 /* 
 
   EXPLORE
@@ -550,4 +526,51 @@ NAVBAR
   height: 8px;
   border-radius: 50%;
   background-color: #fff;
+}
+
+@media (max-height: 1200px) {
+  #landing-page {
+    max-height: none;
+  }
+
+  .landing__title {
+    font-size: 50px;
+  }
+
+  .landing__sub-title {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 750px) {
+  .navlinks {
+    display: none;
+  }
+
+  #mobile-nav {
+    display: block;
+  }
+}
+
+@media (max-width: 585px) {
+  .landing__title,
+  .landing__sub-title {
+    text-align: left;
+  }
+
+  .input-wrapper {
+    flex-direction: column;
+  }
+
+  .landing__input {
+    font-size: 16px;
+    height: 60px;
+    padding-left: 8px;
+  }
+
+  .btn-search {
+    max-width: none;
+    width: 100%;
+    margin: 20px 0 0 0px;
+  }
 }
