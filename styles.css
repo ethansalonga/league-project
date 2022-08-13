@@ -72,6 +72,8 @@ NAVBAR
 .logo {
   height: 40px;
   width: 150px;
+  filter: brightness(0) saturate(100%) invert(46%) sepia(51%) saturate(4001%)
+    hue-rotate(153deg) brightness(100%) contrast(101%);
 }
 
 .navlinks {
@@ -612,6 +614,12 @@ NAVBAR
   bottom: 0;
   background-color: rgba(97, 99, 160, 0.5);
   pointer-events: none;
+}
+
+.explore__logo {
+  height: 40px;
+  width: 150px;
+  filter: brightness(0) saturate(100%) invert(1);
 }
 
 @media (max-height: 1200px) {
