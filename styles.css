@@ -7,6 +7,10 @@
   font-family: "Open Sans", sans-serif;
 }
 
+body {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -474,6 +478,21 @@ NAVBAR
   }
 }
 
+.landing__img {
+  max-width: max-content;
+  bottom: 0px;
+  height: 50vh;
+  position: absolute;
+}
+
+.jinx__img {
+  max-width: max-content;
+  bottom: 0px;
+  height: 50vh;
+  position: absolute;
+  display: none;
+}
+
 /* 
 
   EXPLORE
@@ -646,6 +665,22 @@ NAVBAR
   }
 }
 
+@media (max-width: 1024px) {
+  .landing__img {
+    display: none;
+  }
+
+  .jinx__img {
+    display: block;
+  }
+}
+
+@media (max-width: 680px) {
+  .jinx__img {
+    display: none;
+  }
+}
+
 @media (max-width: 585px) {
   .landing__title,
   .landing__sub-title {
@@ -666,5 +701,9 @@ NAVBAR
     max-width: none;
     width: 100%;
     margin: 20px 0 0 0px;
+  }
+
+  .landing__img {
+    display: none;
   }
 }
